@@ -3,10 +3,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>DnD Stat Tracker</title>
 </head>
 <body>
     <header>DnD Stat Tracker</header>
     <p>This is just it bro.</p>
+    <form action="SOMETHING_DEARGODHELP" method="post">
+        <fieldset id="charcterSection">
+            <legend>Choose Your Character</legend>
+            <input type="radio" id="radioBellos" name="charSelect">
+            <label for="radioBellos">Bellos</label>
+            <input type="radio" id="radioJin" name="charSelect">
+            <label for="radioJin">Jin</label>
+            <input type="radio" id="radioCallum" name="charSelect">
+            <label for="radioCallum">Callum</label>
+        </fieldset>
+        <fieldset id="statSection">
+            <legend>Select Your Stat</legend>
+            <input type="radio" name="statSelect" id="damageDone">
+            <label for="damageDone">Damage Done</label>
+            <input type="radio" name="statSelect" id="damageTaken">
+            <label for="damageTaken">Damage Taken</label>
+            <input type="radio" name="statSelect" id="healingDone">
+            <label for="healingDone">Healing Done</label>
+            <input type="radio" name="statSelect" id="healingReceived">
+            <label for="healingReceived">Healing Received</label>
+            <input type="radio" name="statSelect" id="timesDowned">
+            <label for="timesDowned">Times Downed</label>
+            <input type="radio" name="statSelect" id="exhaustionTaken">
+            <label for="exhaustionTaken">Exhaustion Taken</label>
+            <input type="radio" name="statSelect" id="spellsUsed">
+            <label for="spellsUsed">Spells Used</label>
+            <input type="radio" name="statSelect" id="enemiesKilled">
+            <label for="enemiesKilled">Enemies Killed</label>
+            <hr>
+            <input type="number" id="statValue">
+            <label for="statValue">Stat Value</label>
+            <button id="statRecord">Record Stat</button>
+            <button id="statPlusOne">Current Stat +1</button>
+        </fieldset>
+    </form>
 </body>
 </html>
