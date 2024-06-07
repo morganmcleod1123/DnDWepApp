@@ -9,8 +9,8 @@
 <body>
     <header>DnD Stat Tracker</header>
     <p>This is just it bro.</p>
-    <p>Jk, THIS text is the actual kicker</p>
-    <form action="SOMETHING_DEARGODHELP" method="post">
+    <p id="testingPara">Jk, THIS text is the actual kicker</p>
+    <form>
         <fieldset id="charcterSection">
             <legend>Choose Your Character</legend>
             <input type="radio" id="radioBellos" name="charSelect">
@@ -42,8 +42,60 @@
             <input type="number" id="statValue">
             <label for="statValue">Stat Value</label>
             <button id="statRecord">Record Stat</button>
-            <button id="statPlusOne">Current Stat +1</button>
+            <button id="statPlusOne" type="button">Current Stat +1</button>
         </fieldset>
     </form>
+    <table>
+        <caption>Session Stats</caption>
+        <thead>
+            <tr id="headerRow">
+                <th>Name</th>
+                <th>Damage Done</th>
+                <th>Damage Taken</th>
+                <th>Healing Done</th>
+                <th>Healing Received</th>
+                <th>Times Downed</th>
+                <th>Exhaustion Taken</th>
+                <th>Spells Used</th>
+                <th>Enemies Killed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="bellosRow">
+                <th>Bellos</th>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr id="jinRow">
+                <th>Jin</th>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr id="callumRow">
+                <th>Callum</th>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
 </body>
 </html>

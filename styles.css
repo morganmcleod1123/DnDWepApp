@@ -10,3 +10,16 @@ form{
     display: flex;
     flex-direction: row;
 }
+
+table{
+    border: 2px solid black;
+}
+
+table caption{
+    text-align: left;
+    margin: 2px;
+}
+
+th, td{
+    border: 1px solid black;
+}
