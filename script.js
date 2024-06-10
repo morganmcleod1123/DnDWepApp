@@ -5,25 +5,25 @@ let bellosRow = document.getElementById("bellosRow");
 let playerData = [
     {
         name: "Bellos",
-        damageDone: 1,
-        damageTaken: 2,
-        healingDone: 3,
-        healingReceived: 4,
-        timesDowned: 5,
-        exhaustionTaken: 6,
-        spellsUsed: 7,
-        enemiesKilled: 8,
+        damageDone: 0,
+        damageTaken: 0,
+        healingDone: 0,
+        healingReceived: 0,
+        timesDowned: 0,
+        exhaustionTaken: 0,
+        spellsUsed: 0,
+        enemiesKilled: 0,
     },
     {
         name: "Jin",
-        damageDone: 8,
-        damageTaken: 7,
-        healingDone: 6,
-        healingReceived: 5,
-        timesDowned: 4,
-        exhaustionTaken: 3,
-        spellsUsed: 2,
-        enemiesKilled: 1,
+        damageDone: 0,
+        damageTaken: 0,
+        healingDone: 0,
+        healingReceived: 0,
+        timesDowned: 0,
+        exhaustionTaken: 0,
+        spellsUsed: 0,
+        enemiesKilled: 0,
     },
     {
         name: "Callum",
@@ -58,7 +58,8 @@ function recordStat(){
     let statValue = document.getElementById("statValue");
     // update the specific JSON object in playerData
     updatePlayerData(characterSelected.value, statSelected.value, statValue.value);
-    // call a tableCreation function that creates a table based on playerData
+    // update table element
+    tableUpdate();
 }
 
 function updatePlayerData(charSelected, statSelected, statValue){
