@@ -1,15 +1,60 @@
+:root{
+    /* #e7d39f; */
+    --statBlockBorder: #c2a052;
+    --darkestGradientValue: #e9cb7f;
+    --mainBlockBackgroundColor: #f9f3d8;
+    --redAccentColor: #832000;
+}
+/* Need to figure this out */
+@font-face {
+    font-family: "Draconis";
+    src: local(fonts\Draconis);
+}
+
 *{
     box-sizing: border-box;
 }
 
 header{
     font-weight: bold;
+    text-align: center;
+}
+
+#contentWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset{
+    width: 400px;
+    height: 400px;
+    background-color: var(--mainBlockBackgroundColor);
+    padding: 20px;
+    border-top: 8px solid var(--statBlockBorder);
+    border-bottom: 8px solid var(--statBlockBorder);
+}
+
+.statBlockGradient{
+    width: 440px;
+    height: 40px;
+    margin: -20px -20px 0 -20px;
+    background: linear-gradient(var(--darkestGradientValue), var(--mainBlockBackgroundColor));
+}
+
+fieldset legend {
+    float: left;
+    width: 100%;
+    background-color: red;
+    font-size: 150%;
 }
 
 form{
     display: flex;
     flex-direction: row;
 }
+
+/* Table formatting */
 
 table{
     border: 2px solid black;

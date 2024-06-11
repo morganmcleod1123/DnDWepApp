@@ -10,94 +10,98 @@
     <header>DnD Stat Tracker</header>
     <p>This is just it bro.</p>
     <p id="testingPara">Jk, THIS text is the actual kicker</p>
-    <form>
-        <fieldset id="charcterSection">
-            <legend>Choose Your Character</legend>
-            <input type="radio" id="radioBellos" name="charSelect" value="Bellos">
-            <label for="radioBellos">Bellos</label>
-            <input type="radio" id="radioJin" name="charSelect" value="Jin">
-            <label for="radioJin">Jin</label>
-            <input type="radio" id="radioCallum" name="charSelect" value="Callum">
-            <label for="radioCallum">Callum</label>
-        </fieldset>
-        <fieldset id="statSection">
-            <legend>Select Your Stat</legend>
-            <input type="radio" name="statSelect" id="damageDone" value="damageDone">
-            <label for="damageDone">Damage Done</label>
-            <input type="radio" name="statSelect" id="damageTaken" value="damageTaken">
-            <label for="damageTaken">Damage Taken</label>
-            <input type="radio" name="statSelect" id="healingDone" value="healingDone">
-            <label for="healingDone">Healing Done</label>
-            <input type="radio" name="statSelect" id="healingReceived" value="healingReceived">
-            <label for="healingReceived">Healing Received</label>
-            <input type="radio" name="statSelect" id="timesDowned" value="timesDowned">
-            <label for="timesDowned">Times Downed</label>
-            <input type="radio" name="statSelect" id="exhaustionTaken" value="exhaustionTaken">
-            <label for="exhaustionTaken">Exhaustion Taken</label>
-            <input type="radio" name="statSelect" id="spellsUsed">
-            <label for="spellsUsed">Spells Used</label>
-            <input type="radio" name="statSelect" id="enemiesKilled" value="enemiesKilled">
-            <label for="enemiesKilled">Enemies Killed</label>
-            <hr>
-            <input type="number" id="statValue">
-            <label for="statValue">Stat Value</label>
-            <button id="statRecord" type="button">Record Stat</button>
-            <button id="statPlusOne" type="button">Current Stat +1</button>
-        </fieldset>
-    </form>
-    <table>
-        <caption>Session Stats</caption>
-        <thead>
-            <tr id="headerRow">
-                <th>Name</th>
-                <th>Damage Done</th>
-                <th>Damage Taken</th>
-                <th>Healing Done</th>
-                <th>Healing Received</th>
-                <th>Times Downed</th>
-                <th>Exhaustion Taken</th>
-                <th>Spells Used</th>
-                <th>Enemies Killed</th>
-            </tr>
-        </thead>
-        <!-- Right now, all of the 0s for the table are being defined here.
-         Ideally, the text inside of the HTML table should come from the ACTUAL data in the JS file-->
-        <tbody id="tableBody">
-            <tr id="bellosRow">
-                <th>Bellos</th>
-                <td class = "damageDone">0</td>
-                <td class = "damageTaken">0</td>
-                <td class = "healingDone">0</td>
-                <td class = "healingReceived">0</td>
-                <td class = "timesDowned">0</td>
-                <td class = "exhaustionTaken">0</td>
-                <td class = "spellsUsed">0</td>
-                <td class = "enemiesKilled">0</td>
-            </tr>
-            <tr id="jinRow">
-                <th>Jin</th>
-                <td class = "damageDone">0</td>
-                <td class = "damageTaken">0</td>
-                <td class = "healingDone">0</td>
-                <td class = "healingReceived">0</td>
-                <td class = "timesDowned">0</td>
-                <td class = "exhaustionTaken">0</td>
-                <td class = "spellsUsed">0</td>
-                <td class = "enemiesKilled">0</td>
-            </tr>
-            <tr id="callumRow">
-                <th>Callum</th>
-                <td class = "damageDone">0</td>
-                <td class = "damageTaken">0</td>
-                <td class = "healingDone">0</td>
-                <td class = "healingReceived">0</td>
-                <td class = "timesDowned">0</td>
-                <td class = "exhaustionTaken">0</td>
-                <td class = "spellsUsed">0</td>
-                <td class = "enemiesKilled">0</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="contentWrap">
+        <form>
+            <fieldset id="charcterSection">
+                <div class="statBlockGradient"></div>
+                <legend>Character Choice</legend>
+                <input type="radio" id="radioBellos" name="charSelect" value="Bellos">
+                <label for="radioBellos">Bellos</label>
+                <input type="radio" id="radioJin" name="charSelect" value="Jin">
+                <label for="radioJin">Jin</label>
+                <input type="radio" id="radioCallum" name="charSelect" value="Callum">
+                <label for="radioCallum">Callum</label>
+            </fieldset>
+            <fieldset id="statSection">
+                <div class="statBlockGradient"></div>
+                <legend>Stat Choice</legend>
+                <input type="radio" name="statSelect" id="damageDone" value="damageDone">
+                <label for="damageDone">Damage Done</label>
+                <input type="radio" name="statSelect" id="damageTaken" value="damageTaken">
+                <label for="damageTaken">Damage Taken</label>
+                <input type="radio" name="statSelect" id="healingDone" value="healingDone">
+                <label for="healingDone">Healing Done</label>
+                <input type="radio" name="statSelect" id="healingReceived" value="healingReceived">
+                <label for="healingReceived">Healing Received</label>
+                <input type="radio" name="statSelect" id="timesDowned" value="timesDowned">
+                <label for="timesDowned">Times Downed</label>
+                <input type="radio" name="statSelect" id="exhaustionTaken" value="exhaustionTaken">
+                <label for="exhaustionTaken">Exhaustion Taken</label>
+                <input type="radio" name="statSelect" id="spellsUsed">
+                <label for="spellsUsed">Spells Used</label>
+                <input type="radio" name="statSelect" id="enemiesKilled" value="enemiesKilled">
+                <label for="enemiesKilled">Enemies Killed</label>
+                <hr>
+                <input type="number" id="statValue">
+                <label for="statValue">Stat Value</label>
+                <button id="statRecord" type="button">Record Stat</button>
+                <button id="statPlusOne" type="button">Current Stat +1</button>
+            </fieldset>
+        </form>
+        <table>
+            <caption>Session Stats</caption>
+            <thead>
+                <tr id="headerRow">
+                    <th>Name</th>
+                    <th>Damage Done</th>
+                    <th>Damage Taken</th>
+                    <th>Healing Done</th>
+                    <th>Healing Received</th>
+                    <th>Times Downed</th>
+                    <th>Exhaustion Taken</th>
+                    <th>Spells Used</th>
+                    <th>Enemies Killed</th>
+                </tr>
+            </thead>
+            <!-- Right now, all of the 0s for the table are being defined here.
+            Ideally, the text inside of the HTML table should come from the ACTUAL data in the JS file-->
+            <tbody id="tableBody">
+                <tr id="bellosRow">
+                    <th>Bellos</th>
+                    <td class = "damageDone">0</td>
+                    <td class = "damageTaken">0</td>
+                    <td class = "healingDone">0</td>
+                    <td class = "healingReceived">0</td>
+                    <td class = "timesDowned">0</td>
+                    <td class = "exhaustionTaken">0</td>
+                    <td class = "spellsUsed">0</td>
+                    <td class = "enemiesKilled">0</td>
+                </tr>
+                <tr id="jinRow">
+                    <th>Jin</th>
+                    <td class = "damageDone">0</td>
+                    <td class = "damageTaken">0</td>
+                    <td class = "healingDone">0</td>
+                    <td class = "healingReceived">0</td>
+                    <td class = "timesDowned">0</td>
+                    <td class = "exhaustionTaken">0</td>
+                    <td class = "spellsUsed">0</td>
+                    <td class = "enemiesKilled">0</td>
+                </tr>
+                <tr id="callumRow">
+                    <th>Callum</th>
+                    <td class = "damageDone">0</td>
+                    <td class = "damageTaken">0</td>
+                    <td class = "healingDone">0</td>
+                    <td class = "healingReceived">0</td>
+                    <td class = "timesDowned">0</td>
+                    <td class = "exhaustionTaken">0</td>
+                    <td class = "spellsUsed">0</td>
+                    <td class = "enemiesKilled">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

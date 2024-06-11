@@ -42,9 +42,10 @@ recordButton.onclick = recordStat;
 plusButton.onclick = plusOneFunction;
 
 function plusOneFunction() {
-    //document.getElementById("bellosDamage").innerText
-    //console.log(playerData[0].damageDone);
-    tableUpdater();
+    let selectedCharacter = document.querySelector('input[name="charSelect"]:checked');
+    let selectedStat = document.querySelector('input[name="statSelect"]:checked');
+    updatePlayerData(selectedCharacter.value, selectedStat.value, 1);
+    tableUpdate();
 }
 
 function printTheObject(objectPrinted){
