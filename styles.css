@@ -31,8 +31,8 @@ fieldset{
     height: 400px;
     background-color: var(--mainBlockBackgroundColor);
     padding: 20px;
-    border-top: 8px solid var(--statBlockBorder);
-    border-bottom: 8px solid var(--statBlockBorder);
+    position: relative;
+    margin: 0 10px;
 }
 
 .statBlockGradient{
@@ -40,6 +40,23 @@ fieldset{
     height: 40px;
     margin: -20px -20px 0 -20px;
     background: linear-gradient(var(--darkestGradientValue), var(--mainBlockBackgroundColor));
+}
+
+.statBlockBorder{
+    width: 450px;
+    height: 10px;
+    position: absolute; 
+    left: -5px;
+    background-color: var(--statBlockBorder);
+    border: 1px solid black;
+}
+
+.top{
+    top: -5px;
+}
+
+.bottom{
+    bottom: -5px;
 }
 
 fieldset legend {
