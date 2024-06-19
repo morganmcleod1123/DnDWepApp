@@ -5,10 +5,12 @@
     --mainBlockBackgroundColor: #f9f3d8;
     --redAccentColor: #832000;
 }
-/* Need to figure this out */
+/* Show me figuring this out */
 @font-face {
     font-family: "Draconis";
-    src: local(fonts\Draconis);
+    src: url("fonts/draconis/Draconis.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
@@ -59,11 +61,12 @@ fieldset{
     bottom: -5px;
 }
 
-fieldset legend {
-    float: left;
-    width: 100%;
-    background-color: red;
-    font-size: 150%;
+fieldset header {
+    text-align: left;
+    font-size: 175%;
+    margin-top: -20px;
+    font-family: "Draconis", sans-serif;
+    color: var(--redAccentColor);
 }
 
 form{
@@ -71,10 +74,25 @@ form{
     flex-direction: row;
 }
 
+.radioChoice{
+    display: block;
+}
+
+.fancyDivider{
+    width: 0;
+    height: 0;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 25rem solid var(--redAccentColor);
+    margin: 5% 0;
+}
+
 /* Table formatting */
 
 table{
     border: 2px solid black;
+    background-color: var(--statBlockBorder);
+    
 }
 
 table caption{
@@ -84,4 +102,5 @@ table caption{
 
 th, td{
     border: 1px solid black;
+    background-color: var(--mainBlockBackgroundColor);
 }

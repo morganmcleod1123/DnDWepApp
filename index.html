@@ -15,36 +15,38 @@
             <fieldset id="charcterSection">
                 <div class="statBlockBorder top"></div>
                 <div class="statBlockGradient"></div>
-                <legend>Character Choice</legend>
-                <input type="radio" id="radioBellos" name="charSelect" value="Bellos">
-                <label for="radioBellos">Bellos</label>
-                <input type="radio" id="radioJin" name="charSelect" value="Jin">
-                <label for="radioJin">Jin</label>
-                <input type="radio" id="radioCallum" name="charSelect" value="Callum">
-                <label for="radioCallum">Callum</label>
+                <header>Character Choice</header>
+                <div class="fancyDivider"></div>
+                <label for="radioBellos" class="radioChoice">
+                    <input type="radio" id="radioBellos" name="charSelect" value="Bellos"> Bellos</label>
+                <label for="radioJin" class="radioChoice">
+                    <input type="radio" id="radioJin" name="charSelect" value="Jin"> Jin</label>
+                <label for="radioCallum" class="radioChoice">
+                    <input type="radio" id="radioCallum" name="charSelect" value="Callum"> Callum</label>
                 <div class="statBlockBorder bottom"></div>
             </fieldset>
             <fieldset id="statSection">
                 <div class="statBlockBorder top"></div>
                 <div class="statBlockGradient"></div>
-                <legend>Stat Choice</legend>
-                <input type="radio" name="statSelect" id="damageDone" value="damageDone">
-                <label for="damageDone">Damage Done</label>
-                <input type="radio" name="statSelect" id="damageTaken" value="damageTaken">
-                <label for="damageTaken">Damage Taken</label>
-                <input type="radio" name="statSelect" id="healingDone" value="healingDone">
-                <label for="healingDone">Healing Done</label>
-                <input type="radio" name="statSelect" id="healingReceived" value="healingReceived">
-                <label for="healingReceived">Healing Received</label>
-                <input type="radio" name="statSelect" id="timesDowned" value="timesDowned">
-                <label for="timesDowned">Times Downed</label>
-                <input type="radio" name="statSelect" id="exhaustionTaken" value="exhaustionTaken">
-                <label for="exhaustionTaken">Exhaustion Taken</label>
-                <input type="radio" name="statSelect" id="spellsUsed">
-                <label for="spellsUsed">Spells Used</label>
-                <input type="radio" name="statSelect" id="enemiesKilled" value="enemiesKilled">
-                <label for="enemiesKilled">Enemies Killed</label>
-                <hr>
+                <header>Stat Choice</header>
+                <div class="fancyDivider"></div>
+                <label for="damageDone" class="radioChoice">
+                    <input type="radio" name="statSelect" id="damageDone" value="damageDone"> Damage Done</label>
+                <label for="damageTaken" class="radioChoice">
+                    <input type="radio" name="statSelect" id="damageTaken" value="damageTaken"> Damage Taken</label>
+                <label for="healingDone" class="radioChoice">
+                    <input type="radio" name="statSelect" id="healingDone" value="healingDone"> Healing Done</label>
+                <label for="healingReceived" class="radioChoice">
+                    <input type="radio" name="statSelect" id="healingReceived" value="healingReceived"> Healing Received</label>
+                <label for="timesDowned" class="radioChoice">
+                    <input type="radio" name="statSelect" id="timesDowned" value="timesDowned"> Times Downed</label>
+                <label for="exhaustionTaken" class="radioChoice">
+                    <input type="radio" name="statSelect" id="exhaustionTaken" value="exhaustionTaken"> Exhaustion Taken</label>
+                <label for="spellsUsed" class="radioChoice">
+                    <input type="radio" name="statSelect" id="spellsUsed"> Spells Used</label>
+                <label for="enemiesKilled" class="radioChoice">
+                    <input type="radio" name="statSelect" id="enemiesKilled" value="enemiesKilled"> Enemies Killed</label>
+                <div class="fancyDivider"></div>
                 <input type="number" id="statValue">
                 <label for="statValue">Stat Value</label>
                 <button id="statRecord" type="button">Record Stat</button>
