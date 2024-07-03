@@ -61,11 +61,13 @@ fieldset{
     bottom: -5px;
 }
 
+/* Letter Spacing change quite Goated */
 fieldset header {
     text-align: left;
     font-size: 175%;
     margin-top: -20px;
     font-family: "Draconis", sans-serif;
+    letter-spacing: 2px;
     color: var(--redAccentColor);
 }
 
@@ -78,13 +80,54 @@ form{
     display: block;
 }
 
+/* Char selection */
+
+.charBlockGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.charInputWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.charInputWrapper label{
+    font-size: larger;
+}
+
+#charImg{
+    width: 200px;
+    height: 200px;
+    background-color: #c2a052;
+}
+
+/* Stat selection */
+
+.statInputWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: -10px 0;
+}
+
+.statInputWrapper label{
+    margin: 5% 0;
+    border-bottom: 1px solid var(--redAccentColor);
+    padding-bottom: 10px;
+}
+
+.last.radioChoice{
+    border: none;
+}
+
 .fancyDivider{
     width: 0;
     height: 0;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
     border-left: 25rem solid var(--redAccentColor);
-    margin: 5% 0;
+    margin: 4% 0;
 }
 
 /* Table formatting */
