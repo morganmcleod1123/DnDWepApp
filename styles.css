@@ -139,6 +139,20 @@ form{
     margin: 4% 0;
 }
 
+/* Stat button formatting */
+
+.buttonWrapper{
+    display: flex;
+}
+
+#statValue{
+    margin-top: 4px;
+}
+
+.recordingButton{
+    margin: 5px 0;
+}
+
 /* Table formatting */
 
 table{

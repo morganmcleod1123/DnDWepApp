@@ -24,7 +24,7 @@
                         <label for="radioCallum" class="radioChoice">
                             <input type="radio" id="radioCallum" name="charSelect" value="Callum"> Callum</label>
                     </section>
-                    <img id="charImg" src="images/Callum.png" alt="Image of Character">
+                    <img id="charImg" src="images/emptyImage.png" alt="Image of Character">
                 </section>
                 <div class="statBlockBorder bottom"></div>
             </fieldset>
@@ -52,10 +52,13 @@
                         <input type="radio" name="statSelect" id="enemiesKilled" value="enemiesKilled"> Enemies Killed</label>
                 </section>
                 <div class="fancyDivider"></div>
-                <input type="number" id="statValue">
-                <label for="statValue">Stat Value</label>
-                <button id="statRecord" type="button">Record Stat</button>
-                <button id="statPlusOne" type="button">Current Stat +1</button>
+                <section class="buttonWrapper">
+                    <label id="statLabel" for="statValue">Stat Value <input id="statValue" type="number"></label>
+                    <div>
+                        <button id="statRecord" type="button" class="recordingButton">Record Stat</button>
+                        <button id="statPlusOne" type="button" class="recordingButton">Current Stat +1</button>
+                    </div>
+                </section>
                 <div class="statBlockBorder bottom"></div>
             </fieldset>
         </form>

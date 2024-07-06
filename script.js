@@ -1,7 +1,10 @@
-let recordButton = document.getElementById("statRecord");
-let plusButton = document.getElementById("statPlusOne");
-let testingPara = document.getElementById("testingPara");
-let bellosRow = document.getElementById("bellosRow");
+const recordButton = document.getElementById("statRecord");
+const plusButton = document.getElementById("statPlusOne");
+const bellosRow = document.getElementById("bellosRow");
+const bellosRadio = document.getElementById("radioBellos");
+const charButtons = document.getElementsByName("charSelect");
+const charDisplay = document.getElementById("charImg");
+
 let playerData = [
     {
         name: "Bellos",
@@ -38,14 +41,30 @@ let playerData = [
     }
 ];
 
+let charImgMap = {"Bellos" : "Bellos.png", "Jin" : "Jin.png", "Callum" : "Callum.png"};
+
+// Set up button functionality
 recordButton.onclick = recordStat;
 plusButton.onclick = plusOneFunction;
 
+// Very clean and concise method of updating the portrait
+charButtons.forEach(char => {
+    char.addEventListener("click", (event) => {
+        charDisplay.src = "images/" + charImgMap[event.target.value];
+    })
+})
+
+
 function plusOneFunction() {
+    console.log(charButtons);
     let selectedCharacter = document.querySelector('input[name="charSelect"]:checked');
     let selectedStat = document.querySelector('input[name="statSelect"]:checked');
     updatePlayerData(selectedCharacter.value, selectedStat.value, 1);
     tableUpdate();
+}
+
+function testing(){
+    console.log("Bellos has been selected!");
 }
 
 function printTheObject(objectPrinted){
